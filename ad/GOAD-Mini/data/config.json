@@ -47,41 +47,18 @@
         "sevenkingdoms.local" : {
             "dc": "dc01",
             "domain_password" : "8dCT-DJjgScp",
-            "netbios_name": "SEVENKINGDOMS",
+            "netbios_name": "JONATHAN-PC",
             "trust" : "",
             "laps_path": "OU=Laps,DC=sevenkingdoms,DC=local",
             "organisation_units" : {
-                "Vale"        : { "path" : "DC=sevenkingdoms,DC=local"},
-                "IronIslands" : { "path" : "DC=sevenkingdoms,DC=local"},
-                "Riverlands"  : { "path" : "DC=sevenkingdoms,DC=local"},
-                "Crownlands"  : { "path" : "DC=sevenkingdoms,DC=local"},
-                "Stormlands"  : { "path" : "DC=sevenkingdoms,DC=local"},
-                "Westerlands" : { "path" : "DC=sevenkingdoms,DC=local"},
-                "Reach"       : { "path" : "DC=sevenkingdoms,DC=local"},
-                "Dorne"       : { "path" : "DC=sevenkingdoms,DC=local"}
+                "Vale"        : { "path" : "DC=sevenkingdoms,DC=local"}
             },
             "groups" : {
                 "universal" : {},
                 "global" : {
                     "Lannister" : {
-                        "managed_by" : "tywin.lannister",
+                        "managed_by" : "jonathan.lannister",
                         "path" : "OU=Westerlands,DC=sevenkingdoms,DC=local"
-                    },
-                    "Baratheon" : {
-                        "managed_by" : "robert.baratheon",
-                        "path" : "OU=Stormlands,DC=sevenkingdoms,DC=local"
-                    },
-                    "Small Council" : {
-                        "path" : "OU=Crownlands,DC=sevenkingdoms,DC=local"
-                    },
-                    "DragonStone" : {
-                        "path" : "OU=Crownlands,DC=sevenkingdoms,DC=local"
-                    },
-                    "KingsGuard" : {
-                        "path" : "OU=Crownlands,DC=sevenkingdoms,DC=local"
-                    },
-                    "DragonRider" : {
-                        "path" : "OU=Crownlands,DC=sevenkingdoms,DC=local"
                     }
                 },
                 "domainlocal" : {
@@ -108,102 +85,12 @@
             },
             "users" : {
                 "tywin.lannister" : {
-                    "firstname"   : "Tywin",
+                    "firstname"   : "Jonathan",
                     "surname"     : "Lanister",
                     "password"    : "powerkingftw135",
-                    "city"        : "Casterly Rock",
-                    "description" : "Tywin Lanister",
+                    "city"        : "Seattle",
+                    "description" : "Jonathan Lanister",
                     "groups"      : ["Lannister"],
-                    "path"        : "OU=Crownlands,DC=sevenkingdoms,DC=local"
-                },
-                "jaime.lannister" : {
-                    "firstname"   : "Jaime",
-                    "surname"     : "Lanister",
-                    "password"    : "cersei",
-                    "city"        : "King's Landing",
-                    "description" : "Jaime Lanister",
-                    "groups"      : ["Lannister"],
-                    "path"        : "OU=Crownlands,DC=sevenkingdoms,DC=local"
-                },
-                "cersei.lannister" : {
-                    "firstname"   : "Cersei",
-                    "surname"     : "Lanister",
-                    "password"    : "il0vejaime",
-                    "city"        : "King's Landing",
-                    "description" : "Cersei Lanister",
-                    "groups"      : ["Lannister","Baratheon","Domain Admins","Small Council"],
-                    "path"        : "OU=Crownlands,DC=sevenkingdoms,DC=local"
-                },
-                "tyron.lannister" : {
-                    "firstname"   : "Tyron",
-                    "surname"     : "Lanister",
-                    "password"    : "Alc00L&S3x",
-                    "city"        : "King's Landing",
-                    "description" : "Tyron Lanister",
-                    "groups"      : ["Lannister"],
-                    "path"        : "OU=Westerlands,DC=sevenkingdoms,DC=local"
-                },
-                "robert.baratheon" : {
-                    "firstname"   : "Robert",
-                    "surname"     : "Baratheon",
-                    "password"    : "iamthekingoftheworld",
-                    "city"        : "King's Landing",
-                    "description" : "Robert Lanister",
-                    "groups"      : ["Baratheon","Domain Admins","Small Council","Protected Users"],
-                    "path"        : "OU=Crownlands,DC=sevenkingdoms,DC=local"
-                },
-                "joffrey.baratheon" : {
-                    "firstname"   : "Joffrey",
-                    "surname"     : "Baratheon",
-                    "password"    : "1killerlion",
-                    "city"        : "King's Landing",
-                    "description" : "Joffrey Baratheon",
-                    "groups"      : ["Baratheon","Lannister"],
-                    "path"        : "OU=Crownlands,DC=sevenkingdoms,DC=local"
-                },
-                "renly.baratheon" : {
-                    "firstname"   : "Renly",
-                    "surname"     : "Baratheon",
-                    "password"    : "lorastyrell",
-                    "city"        : "King's Landing",
-                    "description" : "Renly Baratheon",
-                    "groups"      : ["Baratheon","Small Council"],
-                    "path"        : "OU=Crownlands,DC=sevenkingdoms,DC=local"
-                },
-                "stannis.baratheon" : {
-                    "firstname"   : "Stannis",
-                    "surname"     : "Baratheon",
-                    "password"    : "Drag0nst0ne",
-                    "city"        : "King's Landing",
-                    "description" : "Stannis Baratheon",
-                    "groups"      : ["Baratheon","Small Council"],
-                    "path"        : "OU=Crownlands,DC=sevenkingdoms,DC=local"
-                },
-                "petyer.baelish" : {
-                    "firstname"   : "Petyer",
-                    "surname"     : "Baelish",
-                    "password"    : "@littlefinger@",
-                    "city"        : "King's Landing",
-                    "description" : "Petyer Baelish",
-                    "groups"      : ["Small Council"],
-                    "path"        : "OU=Crownlands,DC=sevenkingdoms,DC=local"
-                },
-                "lord.varys" : {
-                    "firstname"   : "Lord",
-                    "surname"     : "Varys",
-                    "password"    : "_W1sper_$",
-                    "city"        : "King's Landing",
-                    "description" : "Lord Varys",
-                    "groups"      : ["Small Council"],
-                    "path"        : "OU=Crownlands,DC=sevenkingdoms,DC=local"
-                },
-                "maester.pycelle" : {
-                    "firstname"   : "Maester",
-                    "surname"     : "Pycelle",
-                    "password"    : "MaesterOfMaesters",
-                    "city"        : "King's Landing",
-                    "description" : "Maester Pycelle",
-                    "groups"      : ["Small Council"],
                     "path"        : "OU=Crownlands,DC=sevenkingdoms,DC=local"
                 }
             }
